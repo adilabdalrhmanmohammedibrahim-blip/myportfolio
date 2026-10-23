@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - TechBlog</title>
+  <link rel="stylesheet" href="blog.css">
+    <script src="blog.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+    <a href="index.html" class="brand">🌐 TechBlog</a>
+
+    <nav class="nav-links">
+     <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Blog</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Project</a>
+    <a href="contact.html">Contact</a>
+   
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">🔍</button>
+      <a href="dashboard.html" class="btn btn-primary" id="dashLink" hidden>Dashboard</a>
+      <a href="login.html" class="btn btn-primary">Login</a>
+      <a href="signup.html" class="btn btn-outline">Sign Up</a>
+    </div>
+  </header>
+  
+      <main>
+
+    <section class="blog-banner">
+      <img src="Screenshot from 2026-10-02 09-27-46.png" alt="">
+    </section>
+
+    <section class="blog-layout">
+
+      <div class="articles">
+        <div class="articles-head">
+          <div>
+            <h2>Latest Articles</h2>
+            <p>Discover fresh articles, expert tips and inspiration to help you grow.</p>
+          </div>
+          <a href="#" class="view-all">View All Blogs →</a>
+        </div>
+
+        <div class="article-list" id="articleList">
+
+          <article class="card" data-category="technology">
+            <img class="thumb" src="Screenshot from 2026-10-01 09-43-12.png" alt="">
+            <span class="tag tag-tech">Technology</span>
+            <h3>Top 10 Web Development Trends in 2026</h3>
+            <p>Discover the latest trends shaping the future of web development and how to stay ahead in your career.</p>
+          </article>
+
+          <article class="card" data-category="design">
+            <img class="thumb" src="Screenshot from 2026-10-01 09-43-30.png" alt="">
+            <span class="tag tag-design">Design</span>
+            <h3>The Power of UI/UX Design in Modern Apps</h3>
+            <p>Good design isn't just about looks. It's about creating experiences for your users.</p>
+          </article>
+
+          <article class="card" data-category="personal growth">
+          <img class="thumb" src="Screenshot from 2026-10-01 09-58-33.png" alt="">
+            <span class="tag tag-growth">Personal Growth</span>
+            <h3>5 Habits for a More Productive Life</h3>
+            <p>Simple daily habits that can help you focus, stay motivated and achieve your goals.</p>
+          </article>
+
+        </div>
+
+        <p class="no-results" id="noResults" hidden>No articles match your search.</p>
+      </div>
+
+      <aside class="sidebar">
+
+        <div class="widget">
+          <label for="blogSearch" class="widget-title">Search Blog</label>
+          <div class="search-box">
+            <span aria-hidden="true">🔍</span>
+            <input type="search" id="blogSearch" placeholder="Search Articles">
+          </div>
+        </div>
+
+        <div class="widget">
+          <h3 class="widget-title">Categories</h3>
+          <ul class="categories" id="categories">
+            <li><button type="button" class="cat" data-category="technology">Technology <span class="count">8</span></button></li>
+            <li><button type="button" class="cat" data-category="design">Design <span class="count">5</span></button></li>
+            <li><button type="button" class="cat" data-category="business">Business <span class="count">4</span></button></li>
+            <li><button type="button" class="cat" data-category="personal growth">Personal Growth <span class="count">6</span></button></li>
+            <li><button type="button" class="cat" data-category="programming">Programming <span class="count">7</span></button></li>
+          </ul>
+        </div>
+
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <h3>Subscribe our Newsletter</h3>
+          <p>Get the latest articles and tips delivered to your inbox.</p>
+
+          <div class="newsletter-row">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </div>
+
+          <p class="newsletter-message" id="newsletterMessage" role="alert"></p>
+        </form>
+
+      </aside>
+
+    </section>
+
+  </main>
+        
+           </section>
+         
+                    <footer class="footer">
+    <a href="index.html" class="brand">🌐 TechBlog</a>
+
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="socials">
+      <a href="#" aria-label="Facebook" class="s-fb">f</a>
+      <a href="#" aria-label="Twitter" class="s-tw">🐦</a>
+      <a href="#" aria-label="LinkedIn" class="s-in">in</a>
+      <a href="#" aria-label="YouTube" class="s-yt">▶</a>
+    </div>
+
+    <p class="copy">© 2026 TechBlog. All rights reserved.</p>
+  </footer>
+ 
+
+</body>
+</html>

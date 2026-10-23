@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - TechBlog</title>
+  <link rel="stylesheet" href="dashboard.css">
+  
+
+     <script>
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+
+  <!-- Send visitors who are not logged in back to the login page -->
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.replace("login.html");
+    }
+  </script>
+</head>
+<body>
+
+  <div class="dash">
+
+    <!-- Sidebar -->
+    <aside class="side">
+      <a href="index.html" class="brand"> </a>
+
+      <nav class="side-nav" aria-label="Dashboard">
+        <a href="dashboard.html" class="active">project</a>
+        <a href="#posts">📝 Posts</a>
+        <a href="#new-post">➕ New post</a>
+        <a href="blog.html">🌍 View blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+       
+      <button type="button" class="logout" id="logoutBtn">Log out</button>
+    </aside>
+
+    
+        <div class="main">
+
+      <header class="topbar">
+        <div>
+          <h1>Dashboard</h1>
+          <p id="welcome"></p>
+        </div>
+        <span class="avatar" aria-hidden="true"></span>
+      </header>
+
+      <main class="content">
+                <section class="stats" aria-label="Summary">
+
+          <article class="stat">
+            <span class="stat-icon" aria-hidden="true">📝</span>
+            <div>
+              <p class="stat-label">Total posts</p>
+              <p class="stat-value" id="statPosts">3</p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <span class="stat-icon" aria-hidden="true">👁️</span>
+            <div>
+              <p class="stat-label">Views</p>
+              <p class="stat-value" id="statViews">1,250</p>
+            </div>
+          </article>
+
+          <article class="stat">
+            <span class="stat-icon" aria-hidden="true">✉️</span>
+            <div>
+              <p class="stat-label">Subscribers</p>
+              <p class="stat-value" id="statSubs">48</p>
+            </div>
+          </article>
+          
+
+        </section>
+        <section class="panel" id="posts" aria-labelledby="postsTitle">
+
+          <div class="panel-head">
+            <h2 id="postsTitle">publish post</h2>
+            <a href="#new-post" class="btn-primary">+ New post</a>
+          </div>
+
+          <div class="table-wrap">
+            <table class="posts-table">
+              <caption class="visually-hidden">List of your blog posts</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+
+              <tbody id="postsBody">
+
+                <tr>
+                  <td class="post-title">Top 10 Web Development Trends in 2026</td>
+                  <td><span class="tag tag-tech">Technology</span></td>
+                  <td><time datetime="2026-10-01">Oct 1, 2026</time></td>
+                  <td class="actions">
+                    <a href="blog.html" class="link-btn">View</a>
+                    <button type="button" class="link-btn danger" data-id="1" aria-label="Delete Top 10 ...">Delete</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="post-title">The Power of UI/UX Design in Modern Apps</td>
+                  <td><span class="tag tag-design">Design</span></td>
+                  <td><time datetime="2026-09-24">Sep 24, 2026</time></td>
+                  <td class="actions">
+                    <a href="blog.html" class="link-btn">View</a>
+                    <button type="button" class="link-btn danger">Delete</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="post-title">5 Habits for a More Productive Life</td>
+                  <td><span class="tag tag-growth">Personal Growth</span></td>
+                  <td><time datetime="2026-09-15">Sep 15, 2026</time></td>
+                  <td class="actions">
+                    <a href="blog.html" class="link-btn">View</a>
+                    <button type="button" class="link-btn danger">Delete</button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <p class="empty" id="emptyMsg" hidden>No posts yet. Add your first post below.</p>
+
+        </section>
+
+             <section class="panel" id="new-post" aria-labelledby="newPostTitle">
+
+          <div class="panel-head">
+            <h2 id="newPostTitle">New post</h2>
+          </div>
+
+          <form class="post-form" id="postForm" novalidate>
+
+            <div class="form-field">
+              <label for="postTitle">Title</label>
+                 <input type="text" id="postTitle" placeholder="Write a clear title" required>
+            </div>
+
+            <div class="form-field">
+              <label for="postCategory">Category</label>
+              <select id="postCategory" required>
+                <option value="">Choose a category</option>
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="business">Business</option>
+                <option value="personal growth">Personal Growth</option>
+                <option value="programming">Programming</option>
+              </select>
+            </div>
+
+            <div class="form-field full">
+              <label for="postSummary">Short description</label>
+              <textarea id="postSummary" rows="4" maxlength="160" placeholder="One or two sentences that make people want to read the post" required></textarea>
+              <span class="hint" id="summaryCount">0 / 160</span>
+            </div>
+
+            <p class="form-message full" id="postMessage" role="alert"></p>
+
+            <div class="form-actions full">
+              <button type="submit" class="btn-primary">Publish post</button>
+              <button type="reset" id="clearButton" class="btn-ghost">Clear</button>
+            </div>
+
+          </form>
+
+        </section>
+       
+      </main>
+
+    </div>
+
+  </div>
+
+  <dialog id="confirmBox" class="confirm-box" aria-labelledby="confirmTitle">
+    <form method="dialog">
+      <h2 id="confirmTitle">Delete this post?</h2>
+      <p id="confirmText"></p>
+      <div class="confirm-actions">
+        <button value="cancel" class="btn-ghost">Cancel</button>
+        <button value="ok" class="btn-danger">Delete</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="posts.js"></script>
+  <script src="dashboard.js"></script>
+
+  
+</body>
+</html>

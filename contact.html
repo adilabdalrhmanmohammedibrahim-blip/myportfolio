@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me - TechBlog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <header class="nav-wrap">
+    <div class="nav-pill">
+      <nav class="nav-links">
+       <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Blog</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Project</a>
+    <a href="contact.html">Contact</a>
+   
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search">🔍</button>
+        <a href="login.html" class="btn btn-primary">Login</a>
+        <a href="signup.html" class="btn btn-outline">Sign Up</a>
+        
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="contact-head">
+      <h1 class="page-title" data-text="Contact Me">Contact Me</h1>
+
+      <a href="mailto:Adiljara88@gmail.com" class="message-me">
+        <img class="c-icon" src="Pasted image (8).png" alt="">
+        <span class="c-name">message me</span>
+      </a>
+    </section>
+
+    <section class="contact-links">
+      <ul class="contact-grid">
+
+        <li>
+          <a href="mailto:Adiljara88@gmail.com" class="contact-item">
+            <img class="c-icon" src="Pasted image (2).png" alt="">
+            <span class="c-name">Email</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener" class="contact-item">
+            <img class="c-icon" src="Pasted image (7).png" alt="">
+            <span class="c-name">WhatsApp</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://t.me/YOURNAME" target="_blank" rel="noopener" class="contact-item">
+            <img class="c-icon" src="Pasted image.png" alt="">
+            <span class="c-name">Telegram</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://facebook.com/YOURNAME" target="_blank" rel="noopener" class="contact-item">
+            <img class="c-icon" src="Pasted image (2).png" alt="">
+            <span class="c-name">Facebook</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://linkedin.com/in/YOURNAME" target="_blank" rel="noopener" class="contact-item">
+            <img class="c-icon" src="Pasted image (3).png" alt="">
+            <span class="c-name">LinkedIn</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://m.me/YOURNAME" target="_blank" rel="noopener" class="contact-item">
+            <img class="c-icon" src="Pasted image (4).png" alt="">
+            <span class="c-name">Messenger</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://instagram.com/YOURNAME" target="_blank" rel="noopener" class="contact-item">
+            <img class="c-icon" src="Pasted image (5).png" alt="">
+            <span class="c-name">Instagram</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/YOURNAME" target="_blank" rel="noopener" class="contact-item">
+            <img class="c-icon" src="Pasted image (6).png" alt="">
+            <span class="c-name">GitHub</span>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="signoff">
+      <p class="with-line">With <a href="mailto:Adiljara88@gmail.com">Adiljara88@gmail.com</a></p>
+      <h2 class="full-name">And ADILABDALRHMAN MOHAMMEDIBRAHIM</h2>
+    </section>
+
+        <section class="message-section" aria-labelledby="formTitle">
+      <h2 id="formTitle">Send me a message</h2>
+
+      <form class="message-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+
+        <div class="m-field">
+          <label for="cName">Your name</label>
+          <input type="text" id="cName" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="m-field">
+          <label for="cEmail">Your email</label>
+          <input type="email" id="cEmail" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="m-field">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" name="message" rows="5" maxlength="1000" required></textarea>
+          <span class="m-hint" id="msgCount">0 / 1000</span>
+        </div>
+
+        <p class="m-status" id="contactStatus" role="alert"></p>
+
+        <button type="submit" class="m-btn" id="contactBtn">Send message</button>
+        <p class="m-note">I only use your details to reply to you.</p>
+
+      </form>
+    </section>
+
+  </main>
+<script src="auth.js"></script>
+</body>
+</html>

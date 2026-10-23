@@ -1,0 +1,240 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 450px;
+            border: 2px solid #00aaff;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Decorative Background Circles */
+        .circle-top-right {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            background-color: #ff4081;
+            border-radius: 50%;
+            top: 40%;
+            right: -50px;
+            z-index: 1;
+        }
+
+        .circle-center-yellow {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 235, 59, 0.6);
+            border-radius: 50%;
+            bottom: 22%;
+            left: 33%;
+            z-index: 1;
+        }
+
+        .circle-bottom-left {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            background-color: #ff4081;
+            border-radius: 50%;
+            bottom: -50px;
+            left: -40px;
+            z-index: 1;
+        }
+
+        .circle-bottom-right {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            background-color: #33b5e5;
+            border-radius: 50%;
+            bottom: -50px;
+            right: -40px;
+            z-index: 1;
+        }
+
+        /* Header / Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: #d9534f;
+            letter-spacing: 1px;
+        }
+
+        .logo-icon {
+            margin-right: 5px;
+            font-size: 18px;
+            color: #f0ad4e;
+        }
+
+        .logo span {
+            color: #5bc0de;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            margin-left: 10px;
+            font-weight: normal;
+        }
+
+        nav a.active {
+            font-weight: 900;
+            font-size: 16px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #0056b3;
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 1.1;
+        }
+
+        .hero-title span {
+            display: block;
+        }
+
+        .megaphone-icon {
+            font-size: 45px;
+        }
+
+        .job-title {
+            color: #0056b3;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* Content Section */
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #111;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .details-list {
+            list-style: none;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .details-list li {
+            margin-bottom: 6px;
+        }
+
+        .details-list span {
+            margin-right: 4px;
+        }
+
+        /* Open / closed badge */
+.status {
+  display: inline-block;
+  margin: 4px 0 12px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status:empty {
+  display: none;
+}
+
+.status.open {
+  background: #d8f5e3;
+  color: #0b6b2e;
+}
+
+.status.closed {
+  background: #ffe0e6;
+  color: #a1123b;
+}
+
+time.closed {
+  text-decoration: line-through;
+}
+
+/* Copy button */
+.copy-btn {
+  margin-left: 6px;
+  padding: 2px 10px;
+  border: 1.5px solid #1d3fbf;
+  border-radius: 999px;
+  background: white;
+  color: #1d3fbf;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #1d3fbf;
+  color: white;
+}
+
+.copy-msg {
+  margin-left: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0b6b2e;
+}
+
+.details-list a {
+  font-weight: 700;
+  color: #1d3fbf;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - TechBlog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+ 
+</head>
+<body>
+
+  <header class="login-nav">
+    <a href="index.html" class="brand">🌐 TechBlog</a>
+
+    <nav class="nav-links">
+       <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Blog</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Project</a>
+    <a href="contact.html">Contact</a>
+   
+    </nav>
+
+    <a href="#" class="btn btn-outline">Sign Up</a>
+<a href="signup.html" class="btn btn-outline">Sign Up</a>
+
+  </header>
+
+  <main class="login-page">
+
+    <section class="login-left">
+      <div class="form-wrap">
+        <h1 class="script" data-text="Welcome Back">Welcome Back</h1>
+        <h2><span class="blue">Login</span> To Your Account</h2>
+        <p class="sub">Access your blog, manage your posts, and be part of our growing community.</p>
+
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <span class="field-icon">✉️</span>
+            <input type="email" id="email" placeholder="Email address" aria-label="Email address" required>
+          </div>
+
+          <div class="field">
+            <span class="field-icon">🔑</span>
+            <input type="password" id="password" placeholder="Password" aria-label="Password" required>
+            <button type="button" id="togglePassword" class="eye" aria-label="Show password">👁️</button>
+          </div>
+
+          <div class="form-row">
+            <label class="remember">
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="small-link" id="forgotLink">Forgot Password?</a>
+          </div>
+
+          <p class="form-message" id="formMessage" role="alert"></p>
+
+          <button type="submit" class="btn btn-primary btn-full">Login</button>
+        </form>
+
+        <div class="divider"><span>or</span></div>
+
+       <button type="button" class="btn-google" id="googleBtn">
+  <span class="g">G</span> Continue With Google
+</button>
+
+        <p class="signup-text">Don't have an account? <a href="#" class="small-link">Sign Up</a></p>
+      </div>
+    </section>
+
+    <section class="login-right">
+      <div class="">
+        <img src="Screenshot from 2026-10-01 15-44-04.png" alt="">
+        <span class="quote-mark">“</span>
+        <h3>Better Ideas.<br>Bigger Opportunities.</h3>
+        <p>Join our community and explore insightful articles, tutorials and tips to grow your skills and build your future.</p>
+        <span class="quote-brand">— TechBlog</span>
+      </div>
+    </section>
+
+  </main>
+    <script src="auth.js"></script>
+    
+  <script type="module" src="login.js"></script>
+  
+</body>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos</title>
+  <link rel="stylesheet" href="videos.css">
+    <script src="videos.js"></script>
+</head>
+<body>
+
+  <!-- Menu row -->
+  <header class="site-nav">
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Project</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Browser bar -->
+  <div class="browser-bar">
+    <button type="button" class="nav-btn" aria-label="Back">←</button>
+    <button type="button" class="nav-btn" aria-label="Forward">→</button>
+    <button type="button" class="nav-btn" aria-label="Reload">⟳</button>
+
+    <div class="address">
+      <span class="fav" aria-hidden="true">▶</span>
+      <input type="text" value="videos.example.com" aria-label="Address bar" readonly>
+    </div>
+
+    <span class="avatar" aria-hidden="true"></span>
+    <button type="button" class="menu-btn" aria-label="Menu">⋮</button>
+  </div>
+
+  <div class="app">
+        <header class="app-header">
+
+      <div class="header-start">
+        <button type="button" class="icon-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+        <a href="videos.html" class="brand">
+          <span class="brand-icon" aria-hidden="true">▶</span>
+          <span class="brand-name">Videos</span>
+        </a>
+      </div>
+
+      <form class="search" role="search">
+        <div class="search-field">
+          <input type="search" id="search" placeholder="Search" aria-label="Search videos" autocomplete="off">
+          <button type="submit" class="search-btn" aria-label="Search">🔍</button>
+        </div>
+        <button type="button" class="mic-btn" aria-label="Search with your voice">🎤</button>
+      </form>
+
+      <div class="header-end">
+        <button type="button" class="create-btn"><span aria-hidden="true">+</span> Create</button>
+        <button type="button" class="icon-btn bell" aria-label="Notifications, 7 new">
+          🔔<span class="badge">7</span>
+        </button>
+        <span class="avatar" aria-hidden="true"></span>
+      </div>
+
+          <div class="layout">
+
+      <nav class="sidebar" id="sidebar" aria-label="Sidebar">
+        <a href="#" class="side-item active">
+          <span class="side-icon" aria-hidden="true">🏠</span>
+          <span>Home</span>
+        </a>
+        <a href="#" class="side-item">
+          <span class="side-icon" aria-hidden="true">🎬</span>
+          <span>Shorts</span>
+        </a>
+        <a href="#" class="side-item">
+          <span class="side-icon" aria-hidden="true">📺</span>
+          <span>Subscriptions</span>
+        </a>
+        <a href="#" class="side-item">
+          <span class="side-icon" aria-hidden="true">👤</span>
+          <span>You</span>
+        </a>
+      </nav>
+
+      <main class="content">
+
+        <div class="chips" role="group" aria-label="Categories">
+          <button type="button" class="chip active">All</button>
+          <button type="button" class="chip">User interface design</button>
+          <button type="button" class="chip">Web pages</button>
+          <button type="button" class="chip">Source code</button>
+          <button type="button" class="chip">Music</button>
+          <button type="button" class="chip">AI</button>
+          <button type="button" class="chip">3D computer graphics</button>
+          <button type="button" class="chip">For loop</button>
+          <button type="button" class="chip">Databases</button>
+          <button type="button" class="chip">Mixes</button>
+          <button type="button" class="chip">Security hackers</button>
+        </div>
+
+                <section class="shorts" aria-labelledby="shortsTitle">
+          <h2 class="shorts-title" id="shortsTitle">
+            <span class="shorts-icon" aria-hidden="true">▶</span> Shorts
+          </h2>
+
+          <div class="shorts-row" id="shortsRow">
+
+            <article class="short" data-title="football skills" data-topic="mixes">
+              <a href="#" class="short-thumb t1" aria-label="Play: Football skills"></a>
+              <div class="short-info">
+                <div>
+                  <h3 class="short-title">Football skills</h3>
+                  <p class="views">668K views</p>
+                </div>
+                <button type="button" class="more-btn" aria-label="More options">⋮</button>
+              </div>
+            </article>
+
+            <article class="short" data-title="page loading animation using html and css" data-topic="web pages source code">
+              <a href="#" class="short-thumb t2" aria-label="Play: Page loading animation using HTML and CSS"></a>
+              <div class="short-info">
+                <div>
+                  <h3 class="short-title">Page loading animation using HTML and CSS</h3>
+                  <p class="views">676K views</p>
+                </div>
+                <button type="button" class="more-btn" aria-label="More options">⋮</button>
+              </div>
+            </article>
+
+            <article class="short" data-title="navbar smart animate in figma" data-topic="user interface design web pages">
+              <a href="#" class="short-thumb t3" aria-label="Play: Navbar smart animate in Figma"></a>
+              <div class="short-info">
+                <div>
+                  <h3 class="short-title">Navbar smart animate in Figma | Animation trick</h3>
+                  <p class="views">321K views</p>
+                </div>
+                <button type="button" class="more-btn" aria-label="More options">⋮</button>
+              </div>
+            </article>
+
+            <article class="short" data-title="match highlights" data-topic="mixes">
+              <a href="#" class="short-thumb t4" aria-label="Play: Match highlights">
+                <span class="new-badge">New</span>
+              </a>
+              <div class="short-info">
+                <div>
+                  <h3 class="short-title">Match highlights</h3>
+                  <p class="views">3.1M views</p>
+                </div>
+                <button type="button" class="more-btn" aria-label="More options">⋮</button>
+              </div>
+            </article>
+
+            <article class="short" data-title="a chance that will change your life" data-topic="ai">
+              <a href="#" class="short-thumb t5" aria-label="Play: A chance that will change your life"></a>
+              <div class="short-info">
+                <div>
+                  <h3 class="short-title">A chance that will change your life</h3>
+                  <p class="views">85K views</p>
+                </div>
+                <button type="button" class="more-btn" aria-label="More options">⋮</button>
+              </div>
+            </article>
+
+                      <p class="no-results" id="noResults" hidden>No videos found.</p>
+
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    </header>
+  </div>
+<script src="auth.js"></script>
+</body>
+</html>

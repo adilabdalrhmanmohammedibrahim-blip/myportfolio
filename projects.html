@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - TechBlog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projects.css">
+   <script src="projects.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="brand">🌐 TechBlog</a>
+    <nav class="nav-links">
+       <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Blog</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Project</a>
+    <a href="contact.html">Contact</a>
+   <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">🔍</button>
+      <a href="login.html" class="btn btn-primary">Login</a>
+      <a href="#" class="btn btn-outline">Sign Up</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-head">
+      <h1 class="page-title" data-text="My Projects">My Projects</h1>
+    </section>
+
+    <section class="showcase">
+
+      <figure class="work work-food" data-title="Food Ordering Page" data-desc="Browse dishes, add them to a cart and see the total update.">
+        <img src="Screenshot from 2026-10-01 17-12-42.png" alt="Food ordering page with a cart">
+        <figcaption class="work-label">HTML CSS js</figcaption>
+      </figure>
+
+      <figure class="work work-calc" data-title="Calculator" data-desc="A working calculator with delete, reset and number buttons.">
+        <figcaption class="work-label vertical">HTML CSS js</figcaption>
+        <img src="Screenshot from 2026-10-01 17-13-15.png" alt="Dark calculator">
+      </figure>
+
+      <figure class="work work-poster" data-title="TechBlog Poster" data-desc="A poster for this blog: Share Ideas, Build Knowledge.">
+        <img src="Screenshot from 2026-10-01 17-14-38.png" alt="TechBlog poster">
+      </figure>
+
+      <figure class="work work-cars" data-title="Car Rental Cards" data-desc="Three cards for sedans, SUVs and luxury cars, each with a learn more button.">
+        <figcaption class="work-label">HTML CSS js</figcaption>
+        <img src="Screenshot from 2026-10-01 17-13-47.png" alt="Car rental cards for sedans, SUVs and luxury">
+      </figure>
+
+      <figure class="work work-travel" data-title="Travel Flyer" data-desc="A flyer for a travel agency, with a clean layout and clear sections.">
+        <figcaption class="work-label vertical">DESIGN</figcaption>
+        <img src="Screenshot from 2026-10-01 17-14-16.png" alt="Travel agency flyer">
+      </figure>
+
+    </section>
+  </main>
+
+  
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project preview" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">✕</button>
+    <figure class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxText"></p>
+      </figcaption>
+    </figure>
+  </div>
+
+ <script src="auth.js"></script>
+</body>
+</html>

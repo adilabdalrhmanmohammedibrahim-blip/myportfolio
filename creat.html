@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up - TechBlog</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+  <div class="signup-page">
+
+    <!-- LEFT: photo -->
+    <section class="signup-photo">
+      <img src="Screenshot from 2026-10-01 17-14-38.png" alt="">
+    </section>
+
+   
+    <section class="signup-right">
+
+      <header class="signup-nav">
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="dashboard.html">Blog</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Project</a>
+    <a href="contact.html">Contact</a>
+    
+        </nav>
+      </header>
+
+      <div class="form-wrap">
+        <h1>Create Account</h1>
+        <p class="sub">Access your blog, manage your posts, and be part of our growing community.</p>
+
+        <form id="signupForm" novalidate>
+
+          <div class="field">
+            <span class="field-icon" aria-hidden="true">👤</span>
+            <input type="text" id="FirstName" placeholder="First Name" aria-label="First name" autocomplete="given-name" required>
+          </div>
+
+          <div class="field">
+            <span class="field-icon" aria-hidden="true">👤</span>
+            <input type="text" id="LastName" placeholder="Last Name" aria-label="Last name" autocomplete="family-name" required>
+          </div>
+
+
+          <div class="field">
+            <span class="field-icon" aria-hidden="true">✉️</span>
+            <input type="email" id="email" placeholder="Email address" aria-label="Email address" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <span class="field-icon" aria-hidden="true">🔑</span>
+            <input type="password" id="password" placeholder="Password" aria-label="Password" autocomplete="new-password" required>
+            <button type="button" class="eye" data-target="password" aria-label="Show password">👁️</button>
+          </div>
+
+          <div class="field">
+            <span class="field-icon" aria-hidden="true">🔑</span>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" aria-label="Confirm password" autocomplete="new-password" required>
+            <button type="button" class="eye" data-target="confirmPassword" aria-label="Show password">👁️</button>
+          </div>
+
+          <p class="form-message" id="formMessage" role="alert"></p>
+
+          <button type="submit" class="btn-submit">Sign Up</button>
+        </form>
+
+        <div class="divider"><span>or</span></div>
+
+        <button type="button" class="btn-google">
+          <span class="g">G</span> Continue With Google
+        </button>
+
+        <p class="login-text">Already have an account? <a href="login.html" class="small-link">Login</a></p>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

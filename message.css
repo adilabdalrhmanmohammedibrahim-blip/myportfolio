@@ -1,0 +1,173 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Two columns */
+.signup-page {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  min-height: 100vh;
+}
+
+/* Photo */
+.signup-photo {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6f8a5f, #2f4a6b);
+}
+
+.signup-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.04);
+}
+
+/* Right side */
+.signup-right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 6%;
+}
+
+.signup-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #0a6cff;
+}
+
+/* Heading */
+.form-wrap {
+  width: 100%;
+  max-width: 480px;
+  margin: auto 0;
+  padding: 20px 0 30px;
+}
+
+.form-wrap h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #0a6cff;
+}
+
+.sub {
+  margin: 14px 0 28px;
+  max-width: 38ch;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Inputs */
+.field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  margin-bottom: 18px;
+  padding: 0 14px;
+  border: 1.5px solid #7aa7f5;
+  border-radius: 12px;
+}
+
+.field:focus-within {
+  border-color: #0a6cff;
+  box-shadow: 0 0 0 3px rgba(10, 108, 255, 0.15);
+}
+
+.field.invalid {
+  border-color: #d93025;
+}
+
+.field input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: 14px;
+}
+
+.eye {
+  background: none;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Message line */
+.form-message {
+  min-height: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.form-message.error {
+  color: #d93025;
+}
+
+.form-message.success {
+  color: #188038;
+}
+
+/* Divider and Google */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #cfd6e4;
+}
+
+.btn-google {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  gap: 10px;
+  width: 100%;
+  height: 46px;
+  border: 1.5px solid #7aa7f5;
+  border-radius: 12px;
+  background: white;
+  font: inherit;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+
+

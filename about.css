@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Alegreya", Georgia, serif;
+  color: #111;
+  background: #d5dce8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Top: brand and white menu bar */
+.top {
+  padding: 12px 5% 0;
+}
+
+.brand {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+}
+
+.nav-pill {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: white;
+  font-family: system-ui, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #2d6cff;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.icon-btn {
+  background: none;
+  border: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 1.5px solid #2d6cff;
+  font-size: 12px;
+}
+
+.btn-primary {
+  background: #2d6cff;
+  color: white;
+}
+
+.btn-outline {
+  background: white;
+  color: #2d6cff;
+}
+
+/* Outlined title with a faded copy underneath */
+.about-head {
+  padding: 18px 5% 40px;
+  text-align: center;
+}
+
+.page-title {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  font-family: "Alfa Slab One", Georgia, serif;
+  font-size: clamp(2.6rem, 8vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #2d2df0;
+}
+
+.page-title::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 8px;
+  top: 0.6em;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #a9a9b8;
+}
+
+/* Project line and Download CV */
+.cv-area {
+  padding: 10px 5% 70px;
+}
+
+.cv-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.project-line {
+  display: block;
+  margin: 10px 0 28px 210px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6b6464;
+}
+
+.project-line:hover {
+  color: #2d6cff;
+}
+
+.cv-btn {
+  display: inline-block;
+  padding: 12px 44px;
+  border-radius: 30px;
+  background: #ffd95a;
+  color: #111;
+  font-family: "Alfa Slab One", Georgia, serif;
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  line-height: 1.1;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cv-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.cv-btn:focus-visible {
+  outline: 3px solid #2d6cff;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-btn {
+    transition: none;
+  }
+
+  .cv-btn:hover {
+    transform: none;
+  }
+}
+
+/* Phones */
+@media (max-width: 700px) {
+  .nav-pill {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .nav-actions {
+    margin-left: 0;
+  }
+}
+
+/* Personal details */
+.details {
+  padding: 0 5% 20px;
+}
+
+.detail-list {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 20px;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.detail-row dt {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.detail-row dd {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6b6464;
+  overflow-wrap: anywhere;
+}
+
+.detail-row dd a:hover {
+  color: #2d6cff;
+  text-decoration: underline;
+}
